@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='fc.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <title>FERTICT</title>
+    <script>
+        var loadFile = function (event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class='heading'>
+            <h4>Plant Disease Prediction</h4>
+        </div>
+        <ul class='nav-links'>
+            <li><a class="links" href="home.html">Home</a></li>
+        </ul>
+        </div>
+    </nav>
+    <h2><u>Upload your image to check:</u></h2>
+    <div class="drop">
+        <label class="choose" for="pet-select">Choose:</label>
+        <select name="pets" id="pet-select">
+            <option value="">--Please choose an option--</option>
+            <option value="Fruit">Fruit</option>
+            <option value="Vegetable">Vegetable</option>
+        </select>
+    </div>
+    <form action="{{ url_for('predict') }}" method="post">
+        <p><input type="file" accept="image/*" name="image" onchange="loadFile(event)"></p>
+        <p><img id="output" width="400" /></p>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

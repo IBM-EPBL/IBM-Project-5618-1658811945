@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='fc.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <title>FERTICT</title>
+</head>
+<body>
+    
+    <nav>
+        <div class='heading'>
+            <h4>Plant Disease Prediction</h4>
+        </div>
+        <ul class='nav-links'>
+            <li><a class="links" href="home.html">Home</a></li>
+            <li><a class="links" href="https://www.amazon.in/Fertilizers-Plant-Food/s?rh=n%3A3639097031&page=3">Store</a></li>
+       
+    </ul>
+        </div>
+    </nav>
+
+  <h2><u>Detect if your plant is infected!</u></h2> 
+  <a class="sub" href="{{ url_for('prediction') }}">Check!</a>
+    <div class="para">
+        <p> Agriculture is one of the major sectors world wide. Over the years</br>
+            it has developed and the use of new technologies and equipment replaced</br>
+            almost all the traditional methods offarming. The plant diseases affect</br>
+            the production. Identificationof diseases and taking necessary precaution</br>
+            is all done through naked eye, which requires labour and laboratries. </br>
+            This application helps farmers in detecting the diseases by observing </br>
+            the spots on the leaves, which inturn saves effort and labour costs.</br>
+        </p>
+    </div>
+</body>
+
+</html>
