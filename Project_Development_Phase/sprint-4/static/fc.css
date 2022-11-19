@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Abril Fatface', cursive;
+}
+
+body {
+    background-image: url('agri.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2{
+    font-family: 'Abril Fatface', cursive;
+    color: rgb(255, 247, 247);
+    font-size: 100px;
+    align-items: center;
+    
+}
+
+.para {
+    display: flex;
+    font-family: 'Abril Fatface', cursive;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    color: rgb(35, 223, 54);
+    font-size: 35px;
+
+}
+input[type=file] {
+    align-items: center;
+    margin-left: 650px;
+    margin-top: 30px;
+    size: 20px;
+    color:rgb(2, 1, 1);
+    font-size: 15px;
+    font-weight: bold;
+}
+#output{
+    margin-left: 650px;
+    size:120px ;
+}
+input[type=submit]{
+    margin-left: 650px;
+}
+.sub{
+    text-decoration: none;
+    color:rgb(9, 10, 16);
+    font-size: 20px;
+    margin-left: 650px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 35px;
+    text-shadow:1px 1px 10px rgb(7, 223, 72), 1px 1px 10px rgb(8, 220, 15);
+}
+.sub:hover{
+    color:white;
+}
+.choose{
+    font-size:45px;
+    color: rgb(35, 223, 54);
+
+}
+.drop{
+    margin-left:540px;
+    size: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(0, 0, 64);
+    font-family: 'Abril Fatface', cursive;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+
+}
+
+.links {
+    text-decoration: none;
+    color:rgb(42, 227, 73);
+    font-size: 20px;
+    font-weight: bold;
+}
+.links:hover{
+    color:blue;
+}
+
+.heading {
+    color:rgb(16, 255, 56);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 35px;
+    padding: 14px 16px;
+}
